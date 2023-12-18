@@ -1,0 +1,15 @@
+name: dispatch receiver
+
+on:
+  repository_dispatch:
+    types:
+      - auto_publish
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: dispatch trigger
+      run: |
+        echo 'hello, world'
