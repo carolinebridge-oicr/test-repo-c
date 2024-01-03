@@ -1,1 +1,1 @@
-    "dash-jbrowse>=1.5.24",
+    "dash-jbrowse>=1.5.25",
