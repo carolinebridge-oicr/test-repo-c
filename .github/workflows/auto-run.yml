@@ -4,11 +4,13 @@ on:
   repository_dispatch:
     types:
       - auto_publish
+  workflow_dispatch:
 
 jobs:
   upgrade: # upgrades package files with new JBrowse version
     runs-on: ubuntu-latest
     steps:
+      - run: echo ${{ github.event.client_payload.version }}
       - name: Upgrade dash_jbrowse version
         uses: actions/checkout@v4
       - run: |
