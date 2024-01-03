@@ -36,7 +36,3 @@ bump:
       - 'patch'
     commits:
       - 'patch:'
-files:
-  - file-path: 'package.json'
-    line: 3
-    start: 10 
