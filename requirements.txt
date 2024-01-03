@@ -1,1 +1,1 @@
-    "dash-jbrowse>=main",
+    "dash-jbrowse>=",
